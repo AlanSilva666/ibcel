@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Áudio e Vídeo - Produtos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      font-family: Verdana, sans-serif;
+      color: #000;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1000px; /* maior largura */
+      margin: 30px auto;
+      padding: 25px 30px;
+      background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.12);
+    }
+    h2, p {
+      margin: 0 0 15px 0;
+      color: #000080;
+    }
+    h2 {
+      font-size: 24px; /* maior título */
+      font-weight: bold;
+    }
+    .desc_produtos {
+      font-size: 16px; /* texto maior */
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .cores-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* mais espaço entre cores */
+      margin: 15px 0 40px;
+    }
+    .cores-container img {
+      width: 56px;  /* imagens maiores */
+      height: 56px;
+      object-fit: contain;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      transition: transform 0.2s ease;
+    }
+    .cores-container img:hover {
+      transform: scale(1.1);
+      border-color: #000080;
+    }
+    .obs {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: 0;
+      outline: none;
+      transition: filter 0.3s ease;
+    }
+    .btn-print img {
+      width: 60px;  /* botão maior */
+      height: 59px;
+      display: block;
+    }
+    .btn-print:hover img {
+      filter: brightness(0.8);
+    }
+    .imagem-produto {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0 35px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      .container {
+        max-width: 95%;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      .desc_produtos {
+        font-size: 15px;
+      }
+      .cores-container img {
+        width: 48px;
+        height: 48px;
+      }
+      .btn-print img {
+        width: 50px;
+        height: 49px;
+      }
+    }
+    @media (max-width: 480px) {
+      .cores-container {
+        gap: 10px;
+      }
+      .cores-container img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Elevadores</h2>
+  <img class="imagem-produto" src="/ibcel/assets/images/prod_gifa_elevador.gif" alt="Produto Áudio e Vídeo" width="600" height="190" />
+  <div class="desc_produtos">
+    <p>Os cabos de comando flexíveis são utilizados em ligações de equipamentos móveis, tais como: pontes rolantes, elevadores, etc.</p>
+  </div>
+
+  <div>
+    <strong style="font-size: 18px; color: #000080;">Cores</strong>
+    <div class="cores-container">
+      <img src="/ibcel/assets/images/img_cor_preto.gif" alt="Cor Preto" />
+      <img src="/ibcel/assets/images/img_cor_azul.gif" alt="Cor Azul" />
+      <img src="/ibcel/assets/images/img_cor_verde.gif" alt="Cor Verde" />
+      <img src="/ibcel/assets/images/img_cor_vermelho.gif" alt="Cor Vermelho" />
+      <img src="/ibcel/assets/images/img_cor_amarelo.gif" alt="Cor Amarelo" />
+      <img src="/ibcel/assets/images/img_cor_branco.gif" alt="Cor Branco" />
+      <img src="/ibcel/assets/images/img_cor_cinza.gif" alt="Cor Cinza" />
+    </div>
+    <p class="obs">Obs: Outras cores sob consulta.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <button class="btn-print" title="Clique aqui para imprimir esta página." onclick="window.print()">
+      <img src="/ibcel/assets/images/imprime.png" alt="Imprimir" />
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mapa com Zoom Interativo</title>
+<style>
+  body {
+    background-color: transparent;
+    font-family: sans-serif; /* Adicionado para melhor legibilidade geral */
+  }
+
+  /* Menu imagem com map */
+  #menu {
+    text-align: center; /* Centraliza o menu */
+    margin-bottom: 20px; /* Espaçamento após o menu */
+  }
+
+  #menu img {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    height: 27px;
+  }
+
+  /* Área do mapa com zoom */
+  #map-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Aumentado para um mapa maior */
+    height: 700px; /* Aumentado para um mapa maior */
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Cantos levemente arredondados */
+  }
+
+  #zoomImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantido 'contain' para garantir que a imagem inteira seja visível */
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.3s ease-out; /* Transição mais suave */
+    display: block;
+  }
+
+  /* Botões de zoom - lado direito, centralizado verticalmente */
+  .zoom-buttons {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Afastado um pouco da borda */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões */
+    z-index: 10;
+  }
+
+  .zoom-btn {
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 28px; /* Botões um pouco maiores */
+    width: 55px; /* Botões um pouco maiores */
+    height: 55px; /* Botões um pouco maiores */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: background 0.2s ease, transform 0.2s ease; /* Adicionado transição para hover */
+  }
+
+  .zoom-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Efeito de leve crescimento ao passar o mouse */
+  }
+
+  .zoom-btn:active {
+    transform: scale(0.98); /* Efeito de clique */
+  }
+
+  #resetBtn {
+    background: #28a745; /* Cor verde para o botão de reset */
+    font-size: 20px; /* Tamanho da fonte para "Reset" */
+  }
+
+  #resetBtn:hover {
+    background: #218838;
+  }
+</style>
+</head>
+<body>
+    <div id="menu">
+      <map name="FPMap0">
+        <area target="_self" coords="6,3,118,24" shape="rect" href="localiza_1.html" />
+        <area target="_self" coords="127,5,242,23" shape="rect" href="localiza_2.html" />
+        <area target="_self" coords="251,4,391,23" shape="rect" href="localiza_3.html" />
+        <area target="_self" coords="403,4,543,22" shape="rect" href="localiza_4.html" />
+      </map>
+      <img
+        src="/ibcel/assets/images/localiza_mnu.png"
+        width="550"
+        height="27"
+        usemap="#FPMap0"
+        alt="Menu de localização" />
+    </div>
+
+    <div id="map-wrapper">
+      <img
+        id="zoomImg"
+        src="/ibcel/assets/images/mapa_1.JPG"
+        alt="Mapa com zoom"
+        draggable="false" />
+
+      <div class="zoom-buttons">
+        <button class="zoom-btn" id="zoomInBtn" aria-label="Aumentar zoom">+</button>
+        <button class="zoom-btn" id="zoomOutBtn" aria-label="Diminuir zoom">−</button>
+        <button class="zoom-btn" id="resetBtn" aria-label="Redefinir zoom">Reset</button> </div>
+    </div>
+<script>
+  const img = document.getElementById('zoomImg');
+  const zoomInBtn = document.getElementById('zoomInBtn');
+  const zoomOutBtn = document.getElementById('zoomOutBtn');
+  const resetBtn = document.getElementById('resetBtn'); // Novo botão de reset
+
+  let scale = 1;
+  let posX = 0;
+  let posY = 0;
+  let isDragging = false;
+  let startX, startY;
+
+  // Função para aplicar as transformações
+  function updateTransform() {
+    img.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+  }
+
+  // Função para resetar o zoom e a posição
+  function resetMap() {
+    scale = 1;
+    posX = 0;
+    posY = 0;
+    updateTransform();
+    img.style.cursor = 'grab'; // Volta o cursor para grab
+  }
+
+  zoomInBtn.addEventListener('click', () => {
+    scale += 0.2;
+    updateTransform();
+  });
+
+  zoomOutBtn.addEventListener('click', () => {
+    scale -= 0.2;
+    if (scale < 0.1) scale = 0.1; // limite mínimo
+    updateTransform();
+  });
+
+  resetBtn.addEventListener('click', resetMap); // Adiciona o evento de click para o botão de reset
+
+  img.addEventListener('mousedown', e => {
+    if (scale <= 1) return; // só permite arrastar se zoom maior que 1
+    isDragging = true;
+    startX = e.clientX - posX;
+    startY = e.clientY - posY;
+    img.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+    // Só reseta o cursor para 'grab' se a imagem não estiver no zoom inicial
+    if (scale > 1) {
+      img.style.cursor = 'grab';
+    } else {
+      img.style.cursor = 'default'; // Ou outro cursor padrão quando não há zoom
+    }
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    posX = e.clientX - startX;
+    posY = e.clientY - startY;
+    updateTransform();
+  });
+
+  img.addEventListener('dragstart', e => e.preventDefault());
+
+  // Garante que o cursor inicial seja 'default' se não houver zoom para arrastar
+  if (scale <= 1) {
+    img.style.cursor = 'default';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabos para Ligações Internas</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      font-family: Verdana, sans-serif;
+      color: #000;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1000px; /* maior largura */
+      margin: 30px auto;
+      padding: 25px 30px;
+      background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.12);
+    }
+    h2, p {
+      margin: 0 0 15px 0;
+      color: #000080;
+    }
+    h2 {
+      font-size: 24px; /* maior título */
+      font-weight: bold;
+    }
+    .desc_produtos {
+      font-size: 16px; /* texto maior */
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .cores-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* mais espaço entre cores */
+      margin: 15px 0 40px;
+    }
+    .cores-container img {
+      width: 56px;  /* imagens maiores */
+      height: 56px;
+      object-fit: contain;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      transition: transform 0.2s ease;
+    }
+    .cores-container img:hover {
+      transform: scale(1.1);
+      border-color: #000080;
+    }
+    .obs {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: 0;
+      outline: none;
+      transition: filter 0.3s ease;
+    }
+    .btn-print img {
+      width: 60px;  /* botão maior */
+      height: 59px;
+      display: block;
+    }
+    .btn-print:hover img {
+      filter: brightness(0.8);
+    }
+    .imagem-produto {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0 35px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    /* Estilos para as imagens de produtos (anteriormente Flash) */
+    .product-image {
+        display: block; /* Garante que a imagem ocupe sua própria linha */
+        margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
+        max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Estilos para a tabela */
+    .product-table {
+        width: 100%; /* Tabela ocupa 100% da largura disponível */
+        border-collapse: collapse; /* Colapsa as bordas das células */
+        margin-top: 20px;
+        font-size: 0.85em; /* Fonte um pouco menor para caber mais */
+    }
+    .product-table th, .product-table td {
+        border: 1px solid #ccc; /* Bordas mais suaves */
+        padding: 8px 5px; /* Padding ajustado */
+        text-align: center;
+        vertical-align: middle;
+    }
+    .product-table th {
+        background-color: #e0e0e0; /* Fundo para o cabeçalho */
+        color: BLACK;
+        font-weight: bold;
+    }
+    .product-table tr:nth-child(even) {
+        background-color: #f9f9f9; /* Linhas zebradas para melhor leitura */
+    }
+    .product-table tr:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+    /* A cor amarela que estava no HTML antigo */
+    .product-table tr td[bgcolor="#FFFF99"] {
+        background-color: #FFFF99;
+    }
+    .product-table tbody tr:last-child {
+        background-color: #FFFFFF; /* Garante que a última linha seja branca se a penúltima for amarela */
+    }
+
+
+    /* Ajustes específicos para as colunas do cabeçalho da tabela */
+    .product-table th span {
+        display: block; /* Garante que cada parte do texto do cabeçalho fique em sua própria linha */
+        line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+          max-width: 95%;
+          padding: 20px;
+        }
+        h2 {
+          font-size: 20px;
+          font-size: 18pt;
+        }
+        .desc_produtos {
+          font-size: 15px;
+        }
+        .cores-container img {
+          width: 48px;
+          height: 48px;
+        }
+        .btn-print img {
+          width: 50px;
+          height: 49px;
+        }
+      }
+      .product-table {
+          font-size: 0.75em; /* Ainda menor em telas muito pequenas */
+      }
+      .product-table th, .product-table td {
+          padding: 5px 3px; /* Padding ainda menor */
+      }
+    }
+    @media (max-width: 480px) {
+        .cores-container {
+          gap: 10px;
+        }
+        .cores-container img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .product-table {
+          font-size: 0.70em; /* Ainda menor em telas muito pequenas */
+      }
+      .product-table th, .product-table td {
+          padding: 5px 3px; /* Padding ainda menor */
+      }
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Cabos para Ligações Internas</h1>
+    <img src="/ibcel/assets/images/prod_gifa_cabo_lig_internas.gif" alt="Cabos para ligações internas" class="product-image">
+
+    <h2>Características Técnicas</h2>
+    <ul>
+        <li>Condutor flexível com fios de cobre nu, têmpera mole (classe 5)</li>
+        <li>Isolamento em PVC flexível colorido</li>
+        <li>Cobertura externa em PVC flexível resistente</li>
+    </ul>
+
+    <h2>Aplicações</h2>
+    <p>Com excelente acabamento e alta flexibilidade, os <strong>Cabos PP</strong> são ideais para conexões de eletrodomésticos como aspiradores de pó, batedeiras, enceradeiras, refrigeradores, entre outros aparelhos portáteis.</p>
+
+    <h2>Normas Técnicas</h2>
+    <ul>
+        <li>NBR 13249 – Cabos e cordões flexíveis para tensões até 750V</li>
+        <li>NBR NM-280/2002 – Condutores de cobre mole para fios e cabos isolados</li>
+    </ul>
+
+    <h2>Identificação por Cor</h2>
+    <ul>
+        <li>2 Condutores: preto, azul-claro</li>
+        <li>3 Condutores: preto, branco, azul-claro</li>
+        <li>4 Condutores: preto, branco, vermelho, azul-claro</li>
+    </ul>
+
+    <h2>Cores Disponíveis</h2>
+    <div class="colors">
+        <img src="/ibcel/assets/images/img_cor_preto.gif" alt="Cor preta">
+        <img src="/ibcel/assets/images/img_cor_azul.gif" alt="Cor azul">
+        <img src="/ibcel/assets/images/img_cor_verde.gif" alt="Cor verde">
+        <img src="/ibcel/assets/images/img_cor_vermelho.gif" alt="Cor vermelho">
+        <img src="/ibcel/assets/images/img_cor_amarelo.gif" alt="Cor amarelo">
+        <img src="/ibcel/assets/images/img_cor_branco.gif" alt="Cor branco">
+        <img src="/ibcel/assets/images/img_cor_cinza.gif" alt="Cor cinza">
+    </div>
+    <br>
+    <p class='obs'>Obs: Outras cores sob consulta.</p>
+
+    <section style="text-align: center; font-family: 'Verdana', sans-serif;">
+      <h2 style="font-size: 0.75rem; font-weight: bold; margin-bottom: 1rem;">
+        Dados Construtivos
+      </h2>
+
+      <table class="product-table" style="border-collapse: collapse; text-align: center;">
+        <thead>
+          <tr>
+            <th rowspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              NÚMERO<br>CONDUT. X SEÇÃO NOMINAL<br>(mm²)
+            </th>
+            <th rowspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              DIÂMETRO NOMINAL DO CONDUTOR (mm)
+            </th>
+            <th colspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              ESPESSURA NOMINAL (mm)
+            </th>
+            <th rowspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              DIÂMETRO EXTERNO NOMINAL (mm)
+            </th>
+            <th rowspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              PESO LÍQUIDO NOMINAL (Kg/Km)
+            </th>
+            <th colspan="2" style="border: 4px solid #000; padding: 4px; word-break: break-word;">
+              ACONDICIONAMENTO NOMINAL<br>Tipo/m
+            </th>
+          </tr>
+          <tr>
+            <th style="border: 4px solid #000; padding: 4px;">Isolação</th>
+            <th style="border: 4px solid #000; padding: 4px;">Capa</th>
+            <th style="border: 4px solid #000; padding: 2px;">Tipo</th>
+            <th style="border: 4px solid #000; padding: 4px;">Metros</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 4px solid #000; padding: 4px;">1 x 2,5</td>
+            <td style="border: 4px solid #000; padding: 4px;">1,78</td>
+            <td style="border: 4px solid #000; padding: 4px;">0,8</td>
+            <td style="border: 4px solid #000; padding: 4px;">0,9</td>
+            <td style="border: 4px solid #000; padding: 4px;">5,2</td>
+            <td style="border: 4px solid #000; padding: 4px;">48,5</td>
+            <td style="border: 4px solid #000; padding: 4px;">Bobina</td>
+            <td style="border: 4px solid #000; padding: 4px;">100m</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <br></br>
+    <div style="text-align: center;">
+      <button class="btn-print" title="Clique aqui para imprimir esta página." onclick="window.print()">
+        <img src="/ibcel/assets/images/imprime.png" alt="Imprimir" />
+      </button>
+    </div>
+</div>
+</body>
+</html>

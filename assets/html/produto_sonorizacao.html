@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multicabos - Microfone (Sonorização)</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      font-family: Verdana, sans-serif;
+      color: #000;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1000px; /* maior largura */
+      margin: 30px auto;
+      padding: 25px 30px;
+      background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.12);
+    }
+    h2, p {
+      margin: 0 0 15px 0;
+      color: #000080;
+    }
+    h2 {
+      font-size: 24px; /* maior título */
+      font-weight: bold;
+    }
+    .desc_produtos {
+      font-size: 16px; /* texto maior */
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .cores-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* mais espaço entre cores */
+      margin: 15px 0 40px;
+    }
+    .cores-container img {
+      width: 56px;  /* imagens maiores */
+      height: 56px;
+      object-fit: contain;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      transition: transform 0.2s ease;
+    }
+    .cores-container img:hover {
+      transform: scale(1.1);
+      border-color: #000080;
+    }
+    .obs {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 40px;
+      font-style: italic;
+      text-align: left;
+    }
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: 0;
+      outline: none;
+      transition: filter 0.3s ease;
+    }
+    .btn-print img {
+      width: 60px;  /* botão maior */
+      height: 59px;
+      display: block;
+    }
+    .btn-print:hover img {
+      filter: brightness(0.8);
+    }
+    .imagem-produto {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0 35px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    /* Estilos para as imagens de produtos (anteriormente Flash) */
+    .product-image {
+        display: block; /* Garante que a imagem ocupe sua própria linha */
+        margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
+        max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Estilos para a tabela */
+    .product-table {
+        width: 100%; /* Tabela ocupa 100% da largura disponível */
+        border-collapse: collapse; /* Colapsa as bordas das células */
+        margin-top: 20px;
+        font-size: 0.85em; /* Fonte um pouco menor para caber mais */
+    }
+    .product-table th, .product-table td {
+        border: 1px solid #ccc; /* Bordas mais suaves */
+        padding: 8px 5px; /* Padding ajustado */
+        text-align: center;
+        vertical-align: middle;
+    }
+    .product-table th {
+        background-color: #e0e0e0; /* Fundo para o cabeçalho */
+        color: BLACK;
+        font-weight: bold;
+    }
+    .product-table tr:nth-child(even) {
+        background-color: #f9f9f9; /* Linhas zebradas para melhor leitura */
+    }
+    .product-table tr:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+    /* A cor amarela que estava no HTML antigo */
+    .product-table tr td[bgcolor="#FFFF99"] {
+        background-color: #FFFF99;
+    }
+    .product-table tbody tr:last-child {
+        background-color: #FFFFFF; /* Garante que a última linha seja branca se a penúltima for amarela */
+    }
+
+
+    /* Ajustes específicos para as colunas do cabeçalho da tabela */
+    .product-table th span {
+        display: block; /* Garante que cada parte do texto do cabeçalho fique em sua própria linha */
+        line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+          max-width: 95%;
+          padding: 20px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        .desc_produtos {
+          font-size: 15px;
+        }
+        .cores-container img {
+          width: 48px;
+          height: 48px;
+        }
+        .btn-print img {
+          width: 50px;
+          height: 49px;
+        }
+      }
+      .product-table {
+          font-size: 0.75em; /* Ainda menor em telas muito pequenas */
+      }
+      .product-table th, .product-table td {
+          padding: 5px 3px; /* Padding ainda menor */
+      }
+    }
+    @media (max-width: 480px) {
+        .cores-container {
+          gap: 10px;
+        }
+        .cores-container img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .product-table {
+          font-size: 0.75em; /* Ainda menor em telas muito pequenas */
+      }
+      .product-table th, .product-table td {
+          padding: 5px 3px; /* Padding ainda menor */
+      }
+    }
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="background-color: transparent">
+
+<div align="LEFT">
+    <div style="width: 610px; max-width: 100%; box-sizing: border-box;"> <div id="geral" style="min-height: 100%; _height: 100%">
+            <div class="geral_inicial">
+                <div class="container">
+                    <strong><h2>Multicabos - Microfone</h2></strong>
+                    <img class="imagem-produto" align="CENTER" src="/ibcel/assets/images/SONORIZACAO.png" alt="Produto Áudio e Vídeo" width="500" height="150" />
+                    <div class="desc_produtos">
+                        <dl class="float">
+                            <dd class="sub_desc_prod">
+                                <p>Utilizados em mesa de som, transmissão de dados a longa
+                                distância, alta frequência e em sistemas que requeiram alta imunidade ao cross talk, com até
+                                66 pares.</p>
+                            </dd>
+                            <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>Cabo de Microfone e instrumentos com blindagem semicondutora de
+                                carbono condutivo.</p>
+                            </dt>
+                        </dl>
+                        <p class="MsoNormal"><b><span style="font-size: 10pt">MULTICABOS (MEDUSA)</span></b></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Condutor flexível 24 AWG, constituído de fios de cobre
+                        estanhado, têmpera mole, de 7/0.203mm</span></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Isolação de Polietileno de alta densidade, nas cores natural
+                        e vermelha diâmetro nominal 1.10mm</span></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Blindagem individual sobre cada um dos pares, de
+                        fita de alumínio revestido com poliéster+condutor dreno</span></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Capa individual de PVC em cores sobre cada um dos pares
+                        blindados diâmetro nominal 3.00mm</span></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Cobertura externa de PVC na cor preta.</span></p>
+                        <p class="MsoNormal"><b><span style="font-size: 10pt">UTILIZAÇÃO:</span></b></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Estes cabos são indicados para interligação de mesas de
+                        som (Medusa)</span></p>
+                        <p class="MsoNormal"><b><span style="font-size: 10pt">IDENTIFICAÇÃO:</span></b></p>
+                        <p class="MsoNormal"><span style="font-size: 10pt">Natural e vermelha</span></p>
+                        <p class="MsoNormal"><b><span style="font-size: 10pt">Características dimensionais</span></b></p>
+
+                        <div class="table-container"> <table class="product-table">
+                                <thead>
+                                    <tr>
+                                        <th><span>NÚMERO</span><span>DE PARES</span></th>
+                                        <th><span>DIÂMETRO EXTERNO</span><span>NOMINAL (mm)</span></th>
+                                        <th><span>PESO LÍQUIDO</span><span>NOMINAL</span><span>(Kg/Km)</span></th>
+                                        <th colspan="2"><span>ACONDICIONAMENTO</span><span>NOMINAL</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th style="border-top: none;">&nbsp;</th> <th style="border-top: none;">&nbsp;</th>
+                                        <th style="border-top: none;">&nbsp;</th>
+                                        <th><span>TIPO</span></th>
+                                        <th><span>METROS</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #FFFF99;">
+                                        <td>4</td>
+                                        <td>9,50</td>
+                                        <td>97,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>11,80</td>
+                                        <td>156,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr style="background-color: #FFFF99;">
+                                        <td>8</td>
+                                        <td>13,00</td>
+                                        <td>191,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>15,70</td>
+                                        <td>264,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr style="background-color: #FFFF99;">
+                                        <td>20</td>
+                                        <td>19,00</td>
+                                        <td>408,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>22,40</td>
+                                        <td>569,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr style="background-color: #FFFF99;">
+                                        <td>36</td>
+                                        <td>25,10</td>
+                                        <td>715,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>27,20</td>
+                                        <td>825,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr style="background-color: #FFFF99;">
+                                        <td>48</td>
+                                        <td>28,80</td>
+                                        <td>912,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>30,80</td>
+                                        <td>1067,00</td>
+                                        <td>BOBINAS</td>
+                                        <td>500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <dl class="float">
+                            <dd>&nbsp;</dd>
+                            <dt class="sub_tit_prod">
+                                <font face="Verdana" style="font-size: 9pt">Cores</font>
+                            </dt>
+                            <dd class="img_cores">
+                                <img class="float" height="42" alt="Cor Preto" src="/ibcel/assets/images/img_cor_preto.gif" width="42">
+                                <img class="float" height="42" alt="Cor Azul" src="/ibcel/assets/images/img_cor_azul.gif" width="42">
+                                <img class="float" height="42" alt="Cor Verde" src="/ibcel/assets/images/img_cor_verde.gif" width="42">
+                                <img class="float" height="42" alt="Cor Vermelho" src="/ibcel/assets/images/img_cor_vermelho.gif" width="42">
+                                <img class="float" height="42" alt="Cor Amarelo" src="/ibcel/assets/images/img_cor_amarelo.gif" width="42">
+                                <img class="float" height="42" alt="Cor Branco" src="/ibcel/assets/images/img_cor_branco.gif" width="42">
+                                <img class="float" height="42" alt="Cor Cinza" src="/ibcel/assets/images/img_cor_cinza.gif" width="42">
+                            </dd>
+                            <br>
+                              <p class="obs">Obs: Outras cores sob consulta.</p>
+                        </dl>
+                        <p align="center">
+                            <strong>
+                                <a title="Clique aqui para imprimir esta página." href="javascript:window.print();">
+                                    <img border="0" src="/ibcel/assets/images/imprime.png" width="50" height="49" alt="Imprimir">
+                                </a>
+                            </strong>
+                        </p>
+                        <p align="center">&nbsp;</p>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
