@@ -1,9 +1,15 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /ibcel/
 
+    # Regras para FORÇAR HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Regra de RewriteBase para a raiz do domínio (após o HTTPS)
+    RewriteBase /
+
+    # Regras do CodeIgniter
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-
     RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
