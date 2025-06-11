@@ -18,9 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'https://localhost/ibcel';
-// $config['base_url'] = 'https://ibcel.com.br/';
+$config['base_url'] = 'https://ibcel.com.br/';
 // application/config/config.php
-$config['base_url'] = 'https://ibcel.com.br/web/';
+// $config['base_url'] = 'https://ibcel.com.br/web/';
 
 /*
 |--------------------------------------------------------------------------
@@ -366,7 +366,7 @@ $config['sess_expiration'] = 7200;
 // $config['sess_save_path'] = NULL; // Tente NULL primeiro, se a pasta estiver gravável
 // $config['sess_save_path'] = APPPATH . '../sessions';
 // Exemplo: se o caminho absoluto for /home/ibcel/ibcel.com.br/web/application/cache/session_data
-$config['sess_save_path'] = '\home\ibcel\ibcel.com.br\web\application\cache/session_data';
+$config['sess_save_path'] = '/home/ibcel/ibcel.com.br/web/application/cache/session_data';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
