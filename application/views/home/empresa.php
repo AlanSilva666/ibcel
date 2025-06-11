@@ -1,9 +1,9 @@
 <!-- CSS Lightbox -->
-<link rel="stylesheet" href="/ibcel/assets/engine/css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../assets/engine/css/lightbox.css" type="text/css" media="screen" />
 <!-- JS Lightbox -->
-<script src="/ibcel/assets/engine/js/prototype.js" type="text/javascript"></script>
-<script src="/ibcel/assets/engine/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
-<script src="/ibcel/assets/engine/js/lightbox.js" type="text/javascript"></script>
+<script src="../assets/engine/js/prototype.js" type="text/javascript"></script>
+<script src="../assets/engine/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<script src="../assets/engine/js/lightbox.js" type="text/javascript"></script>
 <style>
     body {
         margin: 0;
@@ -124,9 +124,9 @@
     <div align="center">
         <td colspan="3" width="778" align='center'>
           <p style="margin-top: 0; margin-bottom: 0">
-          <img border="0" src="/ibcel/assets/images/empresa_foto_galeria_titulo.png" width="195" height="36"></p>
+          <img border="0" src="../assets/images/empresa_foto_galeria_titulo.png" width="195" height="36"></p>
           <p style="margin-top: 0; margin-bottom: 0">
-          <img border="0" src="/ibcel/assets/images/empresa_foto_topo.JPG" width="765" height="106"></p>
+          <img border="0" src="../assets/images/empresa_foto_topo.JPG" width="765" height="106"></p>
         </td>
         <p style="line-height:150%; margin: 3px 0;" align="center">
             <font face="Verdana" style="font-size: 9pt" color="#808080">
@@ -154,8 +154,8 @@
             ];
 
             foreach ($imagens as $img) {
-                echo '<a href="/ibcel/assets/data/images/' . $img . '.jpg" rel="lightbox[sample]">';
-                echo '<img src="/ibcel/assets/data/thumbnails/' . $img . '.png" /></a>';
+                echo '<a href="../assets/data/images/' . $img . '.jpg" rel="lightbox[sample]">';
+                echo '<img src="../assets/data/thumbnails/' . $img . '.png" /></a>';
             }
             ?>
         </div>

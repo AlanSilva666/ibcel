@@ -152,7 +152,7 @@
         <area class="map-link" coords="403,4,543,22" shape="rect" data-map="mapa_4.JPG" alt="Localiza 4" />
       </map>
       <img
-        src="/ibcel/assets/images/localiza_mnu.png"
+        src="../assets/images/localiza_mnu.png"
         width="600"
         height="30"
         usemap="#FPMap0"
@@ -162,7 +162,7 @@
     <div id="map-wrapper">
       <img
         id="zoomImg"
-        src="/ibcel/assets/images/mapa_1.JPG"
+        src="../assets/images/mapa_1.JPG"
         alt="Mapa com zoom"
         draggable="false" />
 
@@ -246,7 +246,7 @@
       e.preventDefault();
 
       const mapFileName = link.dataset.map;
-      img.src = `/ibcel/assets/images/${mapFileName}`;
+      img.src = `../assets/images/${mapFileName}`;
       resetMap();
     });
   });

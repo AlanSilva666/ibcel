@@ -469,32 +469,32 @@
         <h2>PRINCIPAIS PRODUTOS</h2>
         <div class="cards">
             <div class="card">
-                <img src="/ibcel/assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
+                <img src="../assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
                 <h3>CABOS DE RCA</h3>
                 <p>Utilizado para conectar áudio e vídeo em eletrônicos como TVs e sistemas de som.</p>
             </div>
             <div class="card">
-                <img src="/ibcel/assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
+                <img src="../assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
                 <h3>CABOS PP</h3>
                 <p>Versatilidade e segurança para instalações domésticas e industriais.</p>
             </div>
             <div class="card">
-                <img src="/ibcel/assets/images/CABO_FLAT.png" alt="CABO FLAT" loading="lazy" />
+                <img src="../assets/images/CABO_FLAT.png" alt="CABO FLAT" loading="lazy" />
                 <h3>CABOS FLAT</h3>
                 <p>Soluções compactas e eficientes para eletrônicos e maquinários.</p>
             </div>
             <div class="card">
-                <img src="/ibcel/assets/images/CABO_REDE.png" alt="CABO DE REDE" loading="lazy" />
+                <img src="..//assets/images/CABO_REDE.png" alt="CABO DE REDE" loading="lazy" />
                 <h3>CABOS DE REDE</h3>
                 <p>Conectividade de alta performance para suas necessidades de comunicação.</p>
             </div>
             <div class="card">
-                <img src="/ibcel/assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
+                <img src="../assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
                 <h3>CERTIFICAÇÃO ISO 9001:2015</h3>
                 <p>Nosso compromisso com a excelência e processos de qualidade.</p>
             </div>
             <div class="card">
-                <img src="/ibcel/assets/images/CABO_TERMOMETRIA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_TERMOMETRIA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>

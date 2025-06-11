@@ -312,7 +312,7 @@
                 <a href="<?= base_url('home/contato') ?>" class="<?= $segment == 'contato' ? 'active' : '' ?>"><i class="fa fa-envelope"></i> CONTATO</a>
             </nav>
 
-            <form class="search-bar" action="<?= base_url('index.php/home/busca') ?>" method="get">
+            <form class="search-bar" action="<?= base_url('home/busca') ?>" method="get">
                 <div class="search-input-wrapper">
                     <input type="text" name="q" placeholder="BUSCAR NA IBCEL" required>
                     <span class="clear-search" title='LIMPAR BUSCA'>X</span>

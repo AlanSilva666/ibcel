@@ -1,7 +1,7 @@
 <div class="container">
-  <img src="/ibcel/assets/images/certifica_titulo.png" alt="Título" style="display: block; margin: 0 auto;">
+  <img src="../assets/images/certifica_titulo.png" alt="Título" style="display: block; margin: 0 auto;">
   <br>
-  <img src="/ibcel/assets/images/certifica_foto_topo.png" alt="Imagem de topo" class="imagem-topo">
+  <img src="../assets/images/certifica_foto_topo.png" alt="Imagem de topo" class="imagem-topo">
 
   <div class="texto">
     <h3 style="text-align:center;">Política da Qualidade</h3>
@@ -13,11 +13,11 @@
 
   <div class="certificado">
     <p style="color:#4F4F4F; font-size: 1.1rem; font-weight: bold;">A IBCEL apresenta o seu Certificado de Qualidade</p>
-    <a href="javascript:linkinforma('/ibcel/assets/certificados/certificado1.html')" title="CLIQUE PARA AMPLIAR">
-      <img src="./assets/images/CERTIFICADO_ISO.jpg" alt="Certificado ISO 9001:2015">
+    <a href="javascript:linkinforma('../assets/certificados/certificado1.html')" title="CLIQUE PARA AMPLIAR">
+      <img src="../assets/images/CERTIFICADO_ISO.jpg" alt="Certificado ISO 9001:2015">
     </a>
     <div class="botao-download">
-      <img src="/ibcel/assets/images/botao%20down.gif" alt="Download">
+      <img src="../assets/images/botao%20down.gif" alt="Download">
     </div>
     <div class="descricao-cert">
       <strong>Certificado de Sistema de Gestão de Qualidade</strong><br>
