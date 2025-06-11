@@ -500,9 +500,10 @@
             </div>
         </div>
         <div style="text-align: center; margin-top: 50px;">
-            <a href="produtos" class="btn-main">VEJA TODOS OS NOSSOS PRODUTOS</a>
+            <a href="<?= base_url('home/produtos') ?>" class="btn-main">VEJA TODOS OS NOSSOS PRODUTOS</a>
         </div>
     </section>
+
 
     <hr>
 
