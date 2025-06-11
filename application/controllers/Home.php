@@ -10,7 +10,7 @@ class Home extends CI_Controller {
     private $page_map = [
         'inicio' => [
             'titulo' => 'Página Inicial',
-            'url' => 'index.php/home/inicio',
+            'url' => 'index.php/home/index',
             'view_file' => 'home/inicio' // Ex: application/views/home/inicio.php
         ],
         'empresa' => [
@@ -61,7 +61,7 @@ class Home extends CI_Controller {
     }
 
     // --- Suas funções de carregamento de view existentes ---
-    public function inicio() {
+    public function index() {
         $data['view_name'] = 'home/inicio';
         $this->load->view('templates/template', $data);
     }
