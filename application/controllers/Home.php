@@ -10,42 +10,42 @@ class Home extends CI_Controller {
     private $page_map = [
         'inicio' => [
             'titulo' => 'Página Inicial',
-            'url' => 'index.php/home/index',
+            'url' => 'home/index',
             'view_file' => 'home/inicio' // Ex: application/views/home/inicio.php
         ],
         'empresa' => [
             'titulo' => 'Sobre a Empresa',
-            'url' => 'index.php/home/empresa',
+            'url' => 'home/empresa',
             'view_file' => 'home/empresa' // Ex: application/views/home/empresa.php
         ],
         'produtos' => [
             'titulo' => 'Nossos Produtos',
-            'url' => 'index.php/home/produtos',
+            'url' => 'home/produtos',
             'view_file' => 'home/produtos' // Ex: application/views/home/produtos.php
         ],
         'colaboradores' => [
             'titulo' => 'Nossos Colaboradores',
-            'url' => 'index.php/home/colaboradores',
+            'url' => 'home/colaboradores',
             'view_file' => 'home/colaboradores' // Ex: application/views/home/colaboradores.php
         ],
         'contato' => [
             'titulo' => 'Fale Conosco',
-            'url' => 'index.php/home/contato',
+            'url' => 'home/contato',
             'view_file' => 'home/contato' // Ex: application/views/home/contato.php
         ],
         'localizacao' => [
             'titulo' => 'Localização e Endereço',
-            'url' => 'index.php/home/localizacao',
+            'url' => 'home/localizacao',
             'view_file' => 'home/localizacao' // Ex: application/views/home/localizacao.php
         ],
         'certificados' => [
             'titulo' => 'Certificados',
-            'url' => 'index.php/home/certificados',
+            'url' => 'home/certificados',
             'view_file' => 'home/certificados' // Ex: application/views/home/certificados.php
         ],
         'politicas' => [
             'titulo' => 'Políticas',
-            'url' => 'index.php/home/politicas',
+            'url' => 'home/politicas',
             'view_file' => 'home/politicas' // Ex: application/views/home/certificados.php
         ],
     ];
@@ -137,7 +137,7 @@ class Home extends CI_Controller {
 
             // --- Lógica para resultados específicos (como rodapé) que não têm uma view dedicada ---
             // Mantida para termos como 'redes sociais' ou 'email' que podem apontar para o rodapé.
-            $footer_url = base_url('index.php/home/index') . '#footer';
+            $footer_url = base_url('home/index') . '#footer';
 
             if ((strpos($query_lower, 'redes sociais') !== false || strpos($query_lower, 'instagram') !== false || strpos($query_lower, 'facebook') !== false) && !$this->isResultAlreadyAdded($resultados, 'Redes Sociais', $footer_url)) {
                 $resultados[] = ['titulo' => 'Redes Sociais', 'url' => $footer_url, 'snippet' => 'Informações sobre nossas redes sociais você encontra no rodapé do site.'];
@@ -147,7 +147,7 @@ class Home extends CI_Controller {
                 $found_email_in_content_page = false;
                 foreach ($resultados as $res) {
                     // Verifica se 'email' já foi encontrado em alguma página de conteúdo (como contato)
-                    if (strpos(strtolower($res['snippet']), $query_lower) !== false && $res['url'] === base_url('index.php/home/contato')) {
+                    if (strpos(strtolower($res['snippet']), $query_lower) !== false && $res['url'] === base_url('home/contato')) {
                         $found_email_in_content_page = true;
                         break;
                     }
