@@ -469,32 +469,32 @@
         <h2>PRINCIPAIS PRODUTOS</h2>
         <div class="cards">
             <div class="card">
-                <img src="../assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
+                <img src="/ibcel/assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
                 <h3>CABOS DE RCA</h3>
                 <p>Utilizado para conectar áudio e vídeo em eletrônicos como TVs e sistemas de som.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
+                <img src="/ibcel/assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
                 <h3>CABOS PP</h3>
                 <p>Versatilidade e segurança para instalações domésticas e industriais.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_FLAT.png" alt="CABO FLAT" loading="lazy" />
+                <img src="/ibcel/assets/images/CABO_FLAT.png" alt="CABO FLAT" loading="lazy" />
                 <h3>CABOS FLAT</h3>
                 <p>Soluções compactas e eficientes para eletrônicos e maquinários.</p>
             </div>
             <div class="card">
-                <img src="..//assets/images/CABO_REDE.png" alt="CABO DE REDE" loading="lazy" />
+                <img src="/ibcel/assets/images/CABO_REDE.png" alt="CABO DE REDE" loading="lazy" />
                 <h3>CABOS DE REDE</h3>
                 <p>Conectividade de alta performance para suas necessidades de comunicação.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
+                <img src="/ibcel/assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
                 <h3>CERTIFICAÇÃO ISO 9001:2015</h3>
                 <p>Nosso compromisso com a excelência e processos de qualidade.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_TERMOMETRIA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="/ibcel/assets/images/CABO_TERMOMETRIA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>
@@ -530,7 +530,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/542/542638.png" alt="Ícone de E-mail" style="width: 20px; height: 20px; filter: brightness(0) invert(1);">
                 VENDAS@IBCEL.COM.BR
             </a>
-            <a href="https://wa.me/5535992755763" title="Fale com a IBCEL no WhatsApp" target="_blank" class="whatsapp-link">
+            <a href="https://wa.me/5535984160634" title="Fale com a IBCEL no WhatsApp" target="_blank" class="whatsapp-link">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Ícone do WhatsApp">
                 FALE CONOSCO NO WHATSAPP
             </a>
