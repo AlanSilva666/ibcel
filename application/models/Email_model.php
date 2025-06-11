@@ -9,8 +9,18 @@ class Email_model extends CI_Model {
         $this->config->load('email');
     }
 
-    public function contato_cliente($nome, $email_cliente, $assunto_principal_email, $telefone_cliente, $assunto_do_form, $mensagem_cliente) { // Novo parâmetro: $assunto_do_form
+    public function contato_cliente($nome, $email_cliente,
+    $assunto_principal_email, $telefone_cliente, $cep_cliente, $uf_cliente, $cidade_cliente, $assunto_do_form, $mensagem_cliente) { // Novo parâmetro: $assunto_do_form
         // Carregar configurações SMTP do arquivo config/email.php
+        //$nome,
+        //$email,
+        //$assunto_principal_email,
+      //  $telefone,
+        //$cep, // Adicione CEP
+      //  $uf,   // Adicione UF
+      //  $cidade, // Adicione Cidade
+      //  $assunto_selecionado_do_form,
+      //  $mensagem
         $config = array(
             'protocol'    => $this->config->item('protocol'),
             'smtp_host'   => $this->config->item('smtp_host'),
@@ -58,6 +68,9 @@ class Email_model extends CI_Model {
                       <p><strong>NOME:</strong> ' . htmlspecialchars($nome) . '</p>
                       <p><strong>E-MAIL DO CLIENTE:</strong> ' . htmlspecialchars($email_cliente) . '</p>
                       <p><strong>TELEFONE/WHATSAPP DO CLIENTE:</strong> ' . htmlspecialchars($telefone_cliente) . '</p>
+                      <p><strong>CEP DO CLIENTE:</strong> ' . htmlspecialchars($cep_cliente) . '</p>
+                      <p><strong>UF DO CLIENTE:</strong> ' . htmlspecialchars($uf_cliente) . '</p>
+                      <p><strong>CIDADE DO CLIENTE:</strong> ' . htmlspecialchars($cidade_cliente) . '</p>
                       <p><strong>ASSUNTO:</strong> ' . htmlspecialchars($assunto_do_form) . '</p>
                       <p><strong>MENSAGEM:</strong></p>
                       <div style="padding:15px; background:#f0f4fa; border-left:4px solid #003366; margin:15px 0;">
@@ -65,7 +78,7 @@ class Email_model extends CI_Model {
                       </div>
                       <br>
                       <p>RESPONDER RAPIDAMENTE PARA GARANTIR UM EXCELENTE ATENDIMENTO!</p>
-                    </td>
+                     </td>
                   </tr>
                   <tr>
                     <td style="background:#e6eaf0; padding:20px; text-align:center;">
