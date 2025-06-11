@@ -13,7 +13,7 @@
 
   <div class="certificado">
     <p style="color:#4F4F4F; font-size: 1.1rem; font-weight: bold;">A IBCEL apresenta o seu Certificado de Qualidade</p>
-    <a href="javascript:linkinforma('../assets/certificados/certificado1.html')" title="CLIQUE PARA AMPLIAR">
+    <a href="javascript:linkinforma('../assets/certificados/certificado_1.html')" title="CLIQUE PARA AMPLIAR">
       <img src="../assets/images/CERTIFICADO_ISO.jpg" alt="Certificado ISO 9001:2015">
     </a>
     <div class="botao-download">
