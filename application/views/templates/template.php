@@ -338,9 +338,13 @@
 
         <div class="footer-section">
             <h5>CONTATO</h5>
-            <p>AV. ALBERTO VIEIRA ROMÃO, 245 - ALFENAS/MG</p>
-            <p>EMAILS: vendas@ibcel.com.br | celina_ibcel@yahoo.com.br</p>
-            <p>TELEFONE/WHATSAPP: (35) 98416-0634 | (35) 98416-5387</p>
+            <p><i class="fas fa-map-marker-alt icon-spacing"></i> AV. ALBERTO VIEIRA ROMÃO, 245 - ALFENAS/MG</p>
+            <p><i class="fas fa-envelope icon-spacing"></i> EMAILS: <a style="color: white; text-decoration: underline;"
+            href="mailto:vendas@ibcel.com.br" title="CLIQUE PARA ENVIAR UM EMAIL">vendas@ibcel.com.br</a> |
+            <a style="color: white; text-decoration: underline;" 
+            href="mailto:celina_ibcel@yahoo.com.br" title="CLIQUE PARA ENVIAR UM EMAIL">celina_ibcel@yahoo.com.br
+            </a></p>
+            <p><i class="fab fa-whatsapp icon-spacing"></i> TELEFONE/WHATSAPP: (35) 98416-0634 | (35) 98416-5387</p>
         </div>
 
         <div class="footer-section">
@@ -348,11 +352,12 @@
             <div class="social-icons">
                 <a href="https://www.instagram.com/ibcelcondutoreseletricos/" target="_blank" title="INSTAGRAM"><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </div>
+            </div>
     </div>
 
     <div class="footer-bottom" id="footer">
         <p>&copy; <?= date('Y') ?> IBCEL - TODOS OS DIREITOS RESERVADOS</p>
+        <p class="developed-by">DESENVOLVIDO PELA EQUIPE TÉCNICA DE TI - IBCEL</p>
     </div>
 </footer>
 
