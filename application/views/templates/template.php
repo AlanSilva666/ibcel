@@ -292,7 +292,7 @@
 <header class="navbar">
     <div class="  header-container">
         <div class="logo">
-            <a href="<?= base_url('home/inicio') ?>">
+            <a href="<?= base_url('home/index') ?>">
                 <img src="<?= base_url('assets/images/logo-ibcel.png') ?>" title="IBCEL" alt="IBCEL" class="logo-img">
             </a>
         </div>
@@ -303,7 +303,7 @@
             ?>
 
             <nav class="nav-links">
-                <a href="<?= base_url('home/inicio') ?>" class="<?= $segment == 'inicio' || $segment == '' ? 'active' : '' ?>"><i class="fa fa-home"></i> ÍNICIO </a>
+                <a href="<?= base_url('home/index') ?>" class="<?= $segment == 'inicio' || $segment == '' ? 'active' : '' ?>"><i class="fa fa-home"></i> ÍNICIO </a>
                 <a href="<?= base_url('home/empresa') ?>" class="<?= $segment == 'empresa' ? 'active' : '' ?>"><i class="fa fa-building"></i> EMPRESA</a>
                 <a href="<?= base_url('home/produtos') ?>" class="<?= $segment == 'produtos' ? 'active' : '' ?>"><i class="fa fa-box-open"></i> PRODUTOS</a>
                 <a href="<?= base_url('home/localizacao') ?>" class="<?= $segment == 'localizacao' ? 'active' : '' ?>"><i class="fa fa-map-marker-alt"></i> LOCALIZAÇÃO</a>
@@ -312,7 +312,7 @@
                 <a href="<?= base_url('home/contato') ?>" class="<?= $segment == 'contato' ? 'active' : '' ?>"><i class="fa fa-envelope"></i> CONTATO</a>
             </nav>
 
-            <form class="search-bar" action="<?= base_url('home/busca') ?>" method="get">
+            <form class="search-bar" action="<?= base_url('index.php/home/busca') ?>" method="get">
                 <div class="search-input-wrapper">
                     <input type="text" name="q" placeholder="BUSCAR NA IBCEL" required>
                     <span class="clear-search" title='LIMPAR BUSCA'>X</span>
