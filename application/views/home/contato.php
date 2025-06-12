@@ -376,7 +376,7 @@ if (!empty($mensagemExibida)):
         <div class="info-box">
             <i class="fas fa-info-circle info-icon"></i> <p>
               SUA MENSAGEM SERÁ ENVIADA DIRETAMENTE PARA NOSSA EQUIPE TÉCNICA E COMERCIAL.<BR>
-              FIQUE TRANQUILO, RESPONDEREMOS O MAIS BREVE POSSÍVEL!
+              RESPONDEREMOS O MAIS BREVE POSSÍVEL!
             </p>
         </div>
     </form>
