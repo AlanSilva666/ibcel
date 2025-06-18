@@ -308,7 +308,7 @@
                 <a href="<?= base_url('home/produtos') ?>" class="<?= $segment == 'produtos' ? 'active' : '' ?>"><i class="fa fa-box-open"></i> PRODUTOS</a>
                 <a href="<?= base_url('home/localizacao') ?>" class="<?= $segment == 'localizacao' ? 'active' : '' ?>"><i class="fa fa-map-marker-alt"></i> LOCALIZAÇÃO</a>
                 <a href="<?= base_url('home/certificados') ?>" class="<?= $segment == 'certificados' ? 'active' : '' ?>"><i class="fa fa-certificate"></i> CERTIFICADOS</a>
-                <a href="<?= base_url('home/politicas') ?>" class="<?= $segment == 'politica_qualidade' ? 'active' : '' ?>"><i class="fa fa-certificate"></i> POLÍTICAS </a>
+                <a href="<?= base_url('home/politicas') ?>" class="<?= $segment == 'politicas' ? 'active' : '' ?>"><i class="fa fa-certificate"></i> POLÍTICAS </a>
                 <a href="<?= base_url('home/contato') ?>" class="<?= $segment == 'contato' ? 'active' : '' ?>"><i class="fa fa-envelope"></i> CONTATO</a>
             </nav>
 
