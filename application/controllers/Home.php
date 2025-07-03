@@ -60,9 +60,21 @@ class Home extends CI_Controller {
         //$this->config->load('email');
     }
 
-    // --- Suas funções de carregamento de view existentes ---
     public function index() {
+        $data = array(); // Inicialize o array $data
+
+        // Define o nome da view de conteúdo para esta página (sua homepage)
         $data['view_name'] = 'home/inicio';
+
+        // Garante que a meta tag noindex NÃO seja adicionada para a homepage.
+        // Você pode definir como false, ou simplesmente não definir a variável para esta função.
+        $data['meta_robots_tag'] = false;
+
+        // Carrega o conteúdo da view 'home/inicio' e o passa como a variável 'content' para o template.
+        // O TRUE no final faz com que a view seja retornada como uma string, não impressa diretamente.
+        $data['content'] = $this->load->view($data['view_name'], $data, TRUE);
+
+        // Carrega o template principal, passando todos os dados.
         $this->load->view('templates/template', $data);
     }
 
@@ -104,7 +116,6 @@ class Home extends CI_Controller {
         $this->load->view('templates/template', $data);
     }
     // --- Fim das funções de carregamento de view existentes ---
-
 
     // Lógica de Busca Dinâmica de Conteúdo
     // Esta seção é responsável por carregar o conteúdo das suas views e realizar a busca.
@@ -153,15 +164,26 @@ class Home extends CI_Controller {
                     }
                 }
                 if (!$found_email_in_content_page) {
-                     $resultados[] = ['titulo' => 'Informações de contato (rodapé)', 'url' => $footer_url, 'snippet' => 'Para contato via email, verifique as informações no rodapé da página inicial.'];
+                    $resultados[] = ['titulo' => 'Informações de contato (rodapé)', 'url' => $footer_url, 'snippet' => 'Para contato via email, verifique as informações no rodapé da página inicial.'];
                 }
             }
         }
 
         $data['resultados'] = $resultados;
         $data['busca'] = $query;
-        $data['view_name'] = 'home/busca_resultado';
+        $data['view_name'] = 'home/busca_resultado'; // Nome da view de conteúdo para esta página
 
+        // ** AQUI ESTÁ A CHAVE: DEFINIR A VARIÁVEL PARA O TEMPLATE **
+        // Indica que esta página específica (resultados da busca) deve ter a meta tag noindex.
+        $data['meta_robots_tag'] = true;
+
+        // Carrega o conteúdo da view 'home/busca_resultado' e o passa como a variável 'content' para o template.
+        // O último parâmetro 'TRUE' é crucial para que a view seja retornada como string e não impressa diretamente.
+        $data['content'] = $this->load->view($data['view_name'], $data, TRUE);
+
+        // Carrega o template principal, passando todos os dados.
+        // Substitua 'templates/template' pelo nome exato do arquivo do seu template principal
+        // se for diferente (ex: 'template/main').
         $this->load->view('templates/template', $data);
     }
 
@@ -265,7 +287,6 @@ class Home extends CI_Controller {
 
         return $snippet;
     }
-
 
     // FUNÇÃO ENVIAR EMAIL
     public function enviar_contato() {
