@@ -361,7 +361,7 @@
         <div class="footer-section">
             <h5>CONTATO</h5>
             <p><i class="fas fa-map-pin icon-spacing"></i> CEP: 37135-516</p>
-            <p><i class="fas fa-map-marker-alt icon-spacing"></i> AV. ALBERTO VIEIRA ROMÃO, 285 - ALFENAS/MG</p>
+            <p><i class="fas fa-map-marker-alt icon-spacing"></i> AV. ALBERTO VIEIRA ROMÃO, 285 - DISTRITO INDUSTRIAL - ALFENAS/MG</p>
             <p><i class="fas fa-envelope icon-spacing"></i> EMAILS: <a style="color: white; text-decoration: underline;"
                 href="mailto:vendas@ibcel.com.br" title="CLIQUE PARA ENVIAR UM EMAIL">vendas@ibcel.com.br</a> |
                 <a style="color: white; text-decoration: underline;"
