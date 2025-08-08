@@ -444,6 +444,26 @@
                 font-size: 0.95rem;
             }
         }
+        /* Container para centralizar o card ISO */
+        .iso-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px; /* Espaço entre os cards e o card ISO */
+        }
+
+        /* Estilo específico para o card ISO */
+        .iso-card {
+            max-width: 350px; /* Limita a largura do card para ele não se estender demais */
+            width: 100%;
+        }
+
+        /* Ajustes para responsividade */
+        @media (max-width: 768px) {
+            .iso-card {
+                max-width: 90%; /* Ocupa quase toda a largura em telas menores */
+            }
+        }
     </style>
 </head>
 <body>
@@ -469,9 +489,19 @@
         <h2>PRINCIPAIS PRODUTOS</h2>
         <div class="cards">
             <div class="card">
-                <img src="../assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
-                <h3>CABOS DE RCA</h3>
-                <p>Utilizado para conectar áudio e vídeo em eletrônicos como TVs e sistemas de som.</p>
+                <img src="../assets/images/CABO_BALANCA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <h3>CABOS DE BALANÇA</h3>
+                <p>Precisão e confiabilidade para todas as suas pesagens.</p>
+            </div>
+            <div class="card">
+                <img src="../assets/images/CABOS_DE_REDE.png" alt="CABO DE REDE" loading="lazy" />
+                <h3>CABOS DE REDE</h3>
+                <p>Conectividade de alta performace para suas necessidades de comunicação.</p>
+            </div>
+            <div class="card">
+                <img src="../assets/images/CABOOCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <h3>CABOS DE TERMOMETRIA</h3>
+                <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>
             <div class="card">
                 <img src="../assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
@@ -484,21 +514,21 @@
                 <p>Soluções compactas e eficientes para eletrônicos e maquinários.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABOS_DE_REDE.png" alt="CABO DE REDE" loading="lazy" />
-                <h3>CABOS DE REDE</h3>
-                <p>Conectividade de alta performace para suas necessidades de comunicação.</p>
-            </div>
-            <div class="card">
                 <img src="../assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
                 <h3>CERTIFICAÇÃO ISO 9001:2015</h3>
                 <p>Nosso compromisso com a excelência e processos de qualidade.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABOOCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
-                <h3>CABOS DE TERMOMETRIA</h3>
-                <p>Precisão e confiabilidade para medição de temperatura.</p>
+                <img src="../assets/images/CABO_RCA.png" alt="CABOS DE RCA" loading="lazy" />
+                <h3>CABOS DE RCA</h3>
+                <p>Utilizado para conectar áudio e vídeo em eletrônicos como TVs e sistemas de som.</p>
             </div>
         </div>
+
+        <div class="iso-card-container">
+
+        </div>
+
         <div style="text-align: center; margin-top: 50px;">
             <a href="<?= base_url('home/produtos') ?>" class="btn-main">VEJA TODOS OS NOSSOS PRODUTOS</a>
         </div>
