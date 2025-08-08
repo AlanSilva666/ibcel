@@ -484,9 +484,9 @@
                 <p>Soluções compactas e eficientes para eletrônicos e maquinários.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_REDE.png" alt="CABO DE REDE" loading="lazy" />
+                <img src="../assets/images/CABOS_DE_REDE.png" alt="CABO DE REDE" loading="lazy" />
                 <h3>CABOS DE REDE</h3>
-                <p>Conectividade de alta performance para suas necessidades de comunicação.</p>
+                <p>Conectividade de alta performace para suas necessidades de comunicação.</p>
             </div>
             <div class="card">
                 <img src="../assets/images/ISO.png" alt="Certificação ISO 9001:2015" loading="lazy" />
