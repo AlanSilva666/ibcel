@@ -228,10 +228,10 @@
 
         .card img {
             width: 100%;
-            height: 280px; /* Altura ajustada para mais impacto */
+            height: 320px; /* Altura ajustada para mais impacto */
             object-fit: contain;
             background-color: var(--light-blue-bg);
-            padding: 15px;
+            padding: 20px;
             border-bottom: 1px solid rgba(0,0,0,0.05); /* Separador sutil */
             margin-bottom: 20px;
             transition: transform 0.3s ease;
@@ -494,7 +494,7 @@
                 <p>Nosso compromisso com a excelência e processos de qualidade.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_TERMOMETRIA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABOOCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>
