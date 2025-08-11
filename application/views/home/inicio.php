@@ -489,7 +489,12 @@
         <h2>PRINCIPAIS PRODUTOS</h2>
         <div class="cards">
             <div class="card">
-                <img src="../assets/images/CABO_BALANCA.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_BALANCAS.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <h3>CABOS DE BALANÇA</h3>
+                <p>Precisão e confiabilidade para todas as suas pesagens.</p>
+            </div>
+            <div class="card">
+                <img src="../assets/images/CABO_BALANCA_COMERCIAL.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE BALANÇA</h3>
                 <p>Precisão e confiabilidade para todas as suas pesagens.</p>
             </div>
@@ -499,7 +504,7 @@
                 <p>Conectividade de alta performace para suas necessidades de comunicação.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABOOCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_OCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>
