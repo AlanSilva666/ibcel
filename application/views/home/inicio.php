@@ -488,6 +488,12 @@
     <section id="produtos">
         <h2>PRINCIPAIS PRODUTOS</h2>
         <div class="cards">
+          <div class="card">
+              <img src="../assets/images/CABO_FLEXIVEL_0.5MM_A_10.00MM.png" alt="Cabo Flexível" loading="lazy" />
+              <h3>CABOS FLEXIVEIS</h3>
+              <p>Flexibilidade e segurança garantidas pela norma NBR NM 247-3
+              para instalações residenciais e comerciais.</p>
+          </div>
             <div class="card">
                 <img src="../assets/images/CABO_BALANCAS.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE BALANÇA</h3>
@@ -507,6 +513,11 @@
                 <img src="../assets/images/CABO_OCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
+            </div>
+            <div class="card">
+                <img src="../assets/images/CABO_EXPLOSIVO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <h3>CABOS EXPLOSIVOS</h3>
+                <p>Condução de energia para detonação controlada e aplicações pirotécnicas com segurança.</p>
             </div>
             <div class="card">
                 <img src="../assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
