@@ -495,12 +495,12 @@
               para instalações residenciais e comerciais.</p>
           </div>
             <div class="card">
-                <img src="../assets/images/CABO_BALANCAS.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_BALANCAS.png" alt="CABO DE BALANÇAS" loading="lazy" />
                 <h3>CABOS DE BALANÇA</h3>
                 <p>Precisão e confiabilidade para todas as suas pesagens.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_BALANCA_COMERCIAL.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_BALANCA_COMERCIAL.png" alt="CABO DE BALANÇA COMERCIAL" loading="lazy" />
                 <h3>CABOS DE BALANÇA</h3>
                 <p>Precisão e confiabilidade para todas as suas pesagens.</p>
             </div>
@@ -510,14 +510,21 @@
                 <p>Conectividade de alta performace para suas necessidades de comunicação.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_OCO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_OCO.png" alt="CABO OCO" loading="lazy" />
                 <h3>CABOS DE TERMOMETRIA</h3>
                 <p>Precisão e confiabilidade para medição de temperatura.</p>
             </div>
             <div class="card">
-                <img src="../assets/images/CABO_EXPLOSIVO.png" alt="CABO DE TERMOMETRIA" loading="lazy" />
+                <img src="../assets/images/CABO_EXPLOSIVO.png" alt="CABO EXPOSIVO" loading="lazy" />
                 <h3>CABOS EXPLOSIVOS</h3>
                 <p>Condução de energia para detonação controlada e aplicações pirotécnicas com segurança.</p>
+            </div>
+            <div class="card">
+                <img src="../assets/images/CABOMICROFONE.png" alt="CABO DE MICROFONE" loading="lazy" />
+                <h3>CABOS DE MICROFONE</h3>
+                <p>Condutor para cabos de áudio de alta qualidade,
+                com dupla blindagem e seção de 2x0.30mm², ideal para instalações de som e microfones.
+                </p>
             </div>
             <div class="card">
                 <img src="../assets/images/CABO_PP.png" alt="CABO PP" loading="lazy" />
