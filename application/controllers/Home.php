@@ -23,11 +23,6 @@ class Home extends CI_Controller {
             'url' => 'home/produtos',
             'view_file' => 'home/produtos' // Ex: application/views/home/produtos.php
         ],
-        'colaboradores' => [
-            'titulo' => 'Nossos Colaboradores',
-            'url' => 'home/colaboradores',
-            'view_file' => 'home/colaboradores' // Ex: application/views/home/colaboradores.php
-        ],
         'contato' => [
             'titulo' => 'Fale Conosco',
             'url' => 'home/contato',
@@ -232,7 +227,6 @@ class Home extends CI_Controller {
         // Você pode ajustar as tags permitidas se precisar (ex: strip_tags($content, '<p><a>')).
         return strip_tags($content);
     }
-
 
     /**
      * Função auxiliar para verificar se um resultado específico já foi adicionado,
